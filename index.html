@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой папа — мой герой</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">♛ МОЙ ГЕРОЙ</a>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#memories">Воспоминания</a>
+        <a href="#quotes">Цитаты</a>
+        <a href="#thanks">Спасибо за</a>
+        <a href="#records">Рекорды</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">САМЫЙ ЛУЧШИЙ ПАПА</p>
+            <h1>ПАПА, Я ТЕБЯ <span>ЛЮБЛЮ</span></h1>
+            <p class="hero-description">
+                Ты моя опора, мой пример, моя сила.
+                Спасибо тебе за всё, что ты делаешь.
+                Я горжусь, что ты — мой отец.
+            </p>
+            <button id="loveButton" class="primary-btn">
+                ♡ Нажми, если любишь папу
+            </button>
+            <p id="loveMessage" class="hidden message">
+                Пап, я горжусь тобой. Спасибо, что ты у меня есть!
+            </p>
+        </div>
+        <div class="hero-photo">
+            <!-- ГЛАВНОЕ ФОТО: добавь сюда свою фотографию -->
+            <img src="images/image1.png" alt="Я с папой">
+        </div>
+    </section>
+
+    <section class="section" id="memories">
+        <div class="section-heading">
+            <p class="eyebrow">НАША ИСТОРИЯ</p>
+            <h2>Воспоминания</h2>
+            <p>14 фотографий. 14 моментов нашей истории — и каждый дорог по-своему.</p>
+        </div>
+
+        <div class="memory-card">
+            <div class="memory-image">
+                <img id="memoryImage" src="images/image1.jpg"
+                     alt="Наше воспоминание">
+                <span id="memoryCounter" class="counter">01 / 14</span>
+            </div>
+            <div class="memory-info">
+                <p class="eyebrow" id="memoryDate">НАШ МОМЕНТ № 1</p>
+                <h3 id="memoryTitle">С самого начала</h3>
+                <p id="memoryDescription">
+                    Здесь будет история этого момента.
+                </p>
+                <div class="memory-controls">
+                    <button id="prevMemory" class="outline-btn">← Назад</button>
+                    <button id="nextMemory" class="primary-btn">Далее →</button>
+                </div>
+                <div id="memoryDots" class="dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="quotes">
+        <div class="section-heading">
+            <p class="eyebrow">СЛОВА, КОТОРЫЕ ЗАПОМНИЛИСЬ</p>
+            <h2>Цитаты папы</h2>
+            <p>Фразы, которые стали частью нашей семьи.</p>
+        </div>
+
+        <div class="quote-grid">
+            <article class="quote-card">
+                <span class="quote-mark">“</span>
+                <p>"Если драка неизбежна - бей первым"</p>
+                <small>— Папа</small>
+            </article>
+
+            <article class="quote-card">
+                <span class="quote-mark">“</span>
+                <p>"Кто рано встает, тому Бог дает"</p>
+                <small>— Папа</small>
+            </article>
+
+            <article class="quote-card">
+                <span class="quote-mark">“</span>
+                <p>"Кто не работает - тот не ест"</p>
+                <small>— Папа</small>
+            </article>
+            <article class="quote-card">
+                <span class="quote-mark">“</span>
+                <p>"На охоту ходить собак кормить"</p>
+                <small>— Папа</small>
+            </article>
+        
+
+        </div>
+    </section>
+
+    <section class="section" id="thanks">
+        <div class="section-heading">
+            <p class="eyebrow">ЭТО МНОГОЕ ДЛЯ МЕНЯ ЗНАЧИТ</p>
+            <h2>Спасибо за...</h2>
+            <p>Есть вещи, за которые я буду благодарен тебе всегда.</p>
+        </div>
+
+        <div class="thanks-grid">
+            <article class="thanks-card">
+                <span class="feature-icon">01</span>
+                <h3>Твою поддержку</h3>
+                <p>Всегда подскажешь, как поступить в той или иной ситуации.</p>
+            </article>
+
+            <article class="thanks-card">
+                <span class="feature-icon">02</span>
+                <h3>Твою заботу</h3>
+                <p>Помогаешь мне развиваться, учиться и добиваться своих целей.</p>
+            </article>
+
+            <article class="thanks-card">
+                <span class="feature-icon">03</span>
+                <h3>Время вместе</h3>
+                <p>Пытаешься провести со мной как можно больше времени, что я очень ценю ❤️.</p>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="smile-section">
+        <div>
+            <p class="eyebrow">СЕКРЕТНАЯ ОПЕРАЦИЯ</p>
+            <h2>Папа, пора улыбнуться 😎</h2>
+            <p>У нас есть одна фотография, которую нельзя воспринимать серьёзно.</p>
+            <button id="smileButton" class="primary-btn">
+                Нажми для улыбки
+            </button>
+        </div>
+
+        <div id="funnyPhoto" class="funny-photo hidden">
+            <!-- ЗАМЕНИ funny.jpg НА ВАШЕ САМОЕ СМЕШНОЕ ФОТО -->
+            <img src="images/image2.png" alt="Наша смешная фотография">
+            <h3>Вот это кадр! 😂</h3>
+            <p>Некоторые моменты невозможно забыть.</p>
+        </div>
+    </section>
+
+    <section class="section dark-section" id="records">
+        <div class="section-heading">
+            <p class="eyebrow">АБСОЛЮТНЫЙ ЧЕМПИОН</p>
+            <h2>Книга рекордов папы</h2>
+            <p>Некоторые достижения не измеряются медалями.</p>
+        </div>
+
+        <div class="records-grid">
+            <article class="record-card">
+                <span>🏆</span>
+                <p class="record-label">РЕКОРД № 01</p>
+                <h3>Мастер на все руки</h3>
+                <p>Может починить всё.</p>
+            </article>
+
+            <article class="record-card">
+                <span>🛡️</span>
+                <p class="record-label">РЕКОРД № 02</p>
+                <h3>Главный защитник</h3>
+                <p>Человек, на которого всегда можно положиться.</p>
+            </article>
+
+            <article class="record-card">
+                <span>🧠</span>
+                <p class="record-label">РЕКОРД № 03</p>
+                <h3>Самый мудрый</h3>
+                <p>Всегда найдёт, что посоветовать.</p>
+            </article>
+
+            <article class="record-card">
+                <span>💪</span>
+                <p class="record-label">РЕКОРД № 04</p>
+                <h3>Человек слова</h3>
+                <p>Делает то, что обещает.</p>
+            </article>
+
+            <article class="record-card">
+                <span>😂</span>
+                <p class="record-label">РЕКОРД № 05</p>
+                <h3>Король шуток</h3>
+                <p>Всегда может рассмешить.</p>
+            </article>
+
+            <article class="record-card">
+                <span>👑</span>
+                <p class="record-label">РЕКОРД № 06</p>
+                <h3>Лучший папа в мире</h3>
+                <p>Без конкурентов. Без обсуждений.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="lessons">
+        <div class="section-heading">
+            <p class="eyebrow">ТО, ЧТО Я ПОНЕСУ С СОБОЙ</p>
+            <h2>Чему я научился у тебя</h2>
+            <p>Самые важные уроки не всегда записаны в учебниках.</p>
+        </div>
+
+        <div class="lessons-box">
+            <div class="lesson-item">
+                <span>01</span><p>Работать не покладая рук</p>
+            </div>
+            <div class="lesson-item">
+                <span>02</span>
+                <p>Никогда не откладывать на завтра то, что можно сделать сегодня</p>
+            </div>
+            <div class="lesson-item">
+                <span>03</span>
+                <p>Всегда уметь постоять за себя</p>
+            </div>
+            <div class="lesson-item">
+                <span>04</span>
+                <p>Очень много заниматься учебой и саморазвитием</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-section">
+        <p class="eyebrow">И ЭТО САМОЕ ГЛАВНОЕ</p>
+        <h2>Я горжусь, что я твой сын.</h2>
+        <p>
+        </p>
+        <button id="finalButton" class="primary-btn">Ещё раз для папы ❤️</button>
+        <p id="finalMessage" class="hidden message">
+            Люблю тебя, пап. Всегда буду на твоей стороне.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Сделано с уважением, любовью и гордостью. ❤️</p>
+    <a href="#home">Вернуться наверх ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
